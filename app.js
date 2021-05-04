@@ -60,7 +60,6 @@ app.post('/sedes', (request, response) => {
 
 app.post('/users', (request, response) => {
 
-  // falta envio codigo auto y validación admin
  let select = 'SELECT COUNT(user_document_number) document FROM users WHERE user_document_number = ? '
  let query = 'INSERT INTO users SET ?';
  let venue = request.body
