@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "ac3ffe79-062a-4f2a-aba7-4c9404200182",
+		"name": "gym",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/login/Dpard/12345",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/login/Dpardo/1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login",
+						"Dpardo",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/city",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"city_cod\": 5, \"city_name\": \"Pereira\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/city",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"city"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/sedes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"venue_cod\" : 2,\r\n    \"venue_name\" : \"Unicentro\",\r\n    \"venue_address\": \"cll 100\",\r\n    \"venue_phonenumber\": \"234556\",\r\n    \"city_cod\": 1\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sedes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sedes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_cod\" : 7,\r\n    \"user_name\" : \"Martin Francisco\",\r\n    \"user_document_number\": \"89896\",\r\n    \"user_gender\": \"Masculino\",\r\n    \"user_address\": \" cll 20\",\r\n    \"user_phonenumber\": \"31234444434\",\r\n    \"roles_cod\" :1,\r\n    \"type_document_cod\": 1,\r\n    \"venue_cod\": 1,\r\n    \"login_cod\": 1\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/1/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/1/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"1",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
